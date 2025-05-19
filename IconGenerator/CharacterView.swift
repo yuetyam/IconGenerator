@@ -11,7 +11,7 @@ struct CharacterView: View {
                         ZStack {
                                 // 上部半包圍
                                 Path { path in
-                                        path.move(to: CGPoint(x: unit * 2, y: unit * 5.7))
+                                        path.move(to: CGPoint(x: unit * 2, y: unit * 5.6))
                                         path.addLine(to: CGPoint(x: unit * 2, y: unit * 3))
                                         path.addArc(
                                                 center: CGPoint(x: unit * 3.5, y: unit * 2.5),
@@ -28,7 +28,7 @@ struct CharacterView: View {
                                                 endAngle: .degrees(0),
                                                 clockwise: false
                                         )
-                                        path.addLine(to: CGPoint(x: unit * 8, y: unit * 5.7))
+                                        path.addLine(to: CGPoint(x: unit * 8, y: unit * 5.6))
                                 }
                                 .stroke(strokeColor, style: strokeStyle)
 

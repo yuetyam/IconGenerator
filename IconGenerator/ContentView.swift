@@ -5,10 +5,11 @@ struct ContentView: View {
         var body: some View {
                 ScrollView {
                         LazyVStack {
-                                MeshGradientAppIcon(sideLength: 256)
+                                MeshGradientIcon(sideLength: 256)
+                                        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
                                 Button {
                                         #if os(iOS)
-                                        let renderer = ImageRenderer(content: MeshGradientAppIcon(sideLength: 1024))
+                                        let renderer = ImageRenderer(content: MeshGradientIcon(sideLength: 1024))
                                         renderer.scale = 2.0
                                         guard let viewImage = renderer.uiImage else { return }
                                         guard let data = viewImage.pngData() else { return }
