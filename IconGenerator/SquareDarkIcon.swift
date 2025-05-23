@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct IOSDarkAppIcon: View {
+struct SquareDarkIcon: View {
         let sideLength: CGFloat
         var body: some View {
                 ZStack {
@@ -16,5 +16,5 @@ struct IOSDarkAppIcon: View {
 }
 
 #Preview {
-        IOSDarkAppIcon(sideLength: 256)
+        SquareDarkIcon(sideLength: 256)
 }

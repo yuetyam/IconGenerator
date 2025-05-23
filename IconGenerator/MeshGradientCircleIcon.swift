@@ -1,10 +1,10 @@
 import SwiftUI
 
-struct AndroidAppIcon: View {
+struct MeshGradientCircleIcon: View {
         let sideLength: CGFloat
         var body: some View {
                 ZStack {
-                        Color.keyboardBackgroundGray
+                        MeshGradient.colorMeshGradient
                         Circle()
                                 .fill(Color.white)
                                 .frame(width: sideLength * 0.75, height: sideLength * 0.75)
@@ -16,5 +16,5 @@ struct AndroidAppIcon: View {
 }
 
 #Preview {
-        AndroidAppIcon(sideLength: 256)
+        MeshGradientCircleIcon(sideLength: 256)
 }

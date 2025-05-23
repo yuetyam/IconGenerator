@@ -8,24 +8,26 @@ struct BannerView: View {
                                 Spacer().frame(width: 80)
                                 VStack {
                                         Spacer()
-                                        IOSAppIcon(sideLength: 188)
+                                        SquareIcon(sideLength: 188)
                                                 .clipShape(RoundedRectangle(cornerRadius: 44, style: .continuous))
                                         Spacer()
-                                        MacInputMethodAppIcon(sideLength: 188)
+                                        SquareAltIcon(sideLength: 188)
                                                 .clipShape(RoundedRectangle(cornerRadius: 44, style: .continuous))
                                         Spacer()
                                 }
                                 Spacer()
                         }
+                        #if os(iOS)
                         HStack {
                                 Spacer()
                                 Image(.keyboard)
                                         .resizable()
                                         .scaledToFit()
                                         .frame(height: 490)
-                                        .clipShape(RoundedRectangle(cornerRadius: 4, style: .continuous))
+                                        .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
                                 Spacer().frame(width: 90)
                         }
+                        #endif
                 }
                 .frame(width: 1200, height: 630)
         }

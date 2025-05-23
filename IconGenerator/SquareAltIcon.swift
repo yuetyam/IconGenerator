@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct MacInputMethodAppIcon: View {
+struct SquareAltIcon: View {
         let sideLength: CGFloat
         var body: some View {
                 ZStack {
@@ -16,5 +16,5 @@ struct MacInputMethodAppIcon: View {
 }
 
 #Preview {
-        MacInputMethodAppIcon(sideLength: 256)
+        SquareAltIcon(sideLength: 256)
 }

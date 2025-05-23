@@ -1,12 +1,10 @@
 import SwiftUI
 
-struct WebRoundedIcon: View {
+struct CircleIcon: View {
         let sideLength: CGFloat
         var body: some View {
                 ZStack {
-                        Color.clear
-                        Circle()
-                                .fill(Color.keyboardBackgroundGray)
+                        Color.keyboardBackgroundGray
                         Circle()
                                 .fill(Color.white)
                                 .frame(width: sideLength * 0.75, height: sideLength * 0.75)
@@ -18,5 +16,5 @@ struct WebRoundedIcon: View {
 }
 
 #Preview {
-        WebRoundedIcon(sideLength: 256)
+        CircleIcon(sideLength: 256)
 }
